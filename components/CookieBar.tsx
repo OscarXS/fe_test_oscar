@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Cookies from "js-cookie";
 
+interface CookieHeader {'setCookie'?: boolean[]; }
+
 function CookieBar() {
   const [isCookieSet, setCookie] = useState(Cookies.get("cookieConsent"));
   const [isContainerActive, setIsContainerActive] = useState<string>("true")

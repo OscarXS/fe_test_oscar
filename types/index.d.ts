@@ -13,3 +13,4 @@ declare type SearchParamProps = {
     id: string;
   }
   
+  declare module 'js-cookie';
